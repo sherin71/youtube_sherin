@@ -328,7 +328,7 @@ if selected == "Data Collection & Processing":
                     mycursor.execute(query2, tuple(i.values()))
                     mydb.commit()
 
-         
+         #insert all the details into mysql
         if st.button(":violet[The Big Send-off 🚀]"):
             try:
                 insert_into_cha()
@@ -341,7 +341,7 @@ if selected == "Data Collection & Processing":
             except:
                 st.error("✅ Channel Details Transformation Done!!")
 
-# VIEW PAGE
+#sql 10 queries
 if selected == "SQL Query Generator":
 
     st.write("## :red[🤔 Explore Questions Selection❓]")
